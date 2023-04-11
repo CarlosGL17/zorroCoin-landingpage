@@ -8,7 +8,11 @@ export default function Home() {
     <div>
       <Head>
         <title>ZorroCoin</title>
-        <meta name="description" content="Zorro Coin ERC20 token" />
+        <meta name="description" content="ZorroCoin ERC20 token" />
+        <meta name="keywords" content="Zorro Coin, ERC20 token, students, ITESZ" />
+        <meta name="author" content="ZorroCoin Team" />
+        <meta name="copyright" content="ZorroCoin" />
+        <link rel="canonical" href="https://zorrocoin.tech/" />
         <link rel="icon" href="/favicon.ico" decoding='async' />
       </Head>
       <Hero></Hero>

@@ -40,10 +40,11 @@ const Navbar = () => {
             </nav>
             <div id="offcanvas" data-uk-offcanvas="flip: false; overlay: true">
                 <div className="uk-offcanvas-bar">
-                    <h3 className='uk-text-bold uk-logo'>ZORROCOIN </h3>
+                    <a><Img src={Logo} alt="" width={50} height={50} quality={100} decoding='async' /></a>
+                    <a className='uk-text-bold uk-logo' href='#'>ZORROCOIN </a>
                     <ul className="uk-nav-default uk-nav-parent-icon" data-uk-nav>
                         <li className="uk-nav-divider uk-margin-top"></li>
-                        <li className='uk-button-text uk-width-small'><a href="#"><span className="uk-margin-small-right" data-uk-icon="icon: mail"></span>zorros@zorrocoin.tech</a></li>
+                        <li><a href="#"><span className="uk-margin-small-right" data-uk-icon="icon: mail"></span> zorros@zorrocoin.tech</a></li>
                         <li className='uk-button-text uk-width-small'><a href="#"><span className="uk-margin-small-right" data-uk-icon="icon: github"></span> Github</a></li>
                         <li className='uk-button-text uk-width-small'><a href="#"><span className="uk-margin-small-right" data-uk-icon="icon: facebook"></span> Facebook</a></li>
                     </ul>
