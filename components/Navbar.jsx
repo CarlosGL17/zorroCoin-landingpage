@@ -21,7 +21,7 @@ const Navbar = () => {
                         <div className="uk-navbar-right">
                             <ul className="uk-navbar-nav">
                                 <li className='uk-navbar-item'>
-                                    <a className="uk-button-text uk-visible@m">Ecosystem</a>
+                                    <a className="uk-button-text uk-visible@m" href="#Ecosistema">Ecosystem</a>
                                 </li>
                                 <li className='uk-navbar-item uk-visible@m'>
                                     <a className="uk-button-text">Whitepaper</a>
@@ -40,16 +40,12 @@ const Navbar = () => {
             </nav>
             <div id="offcanvas" data-uk-offcanvas="flip: false; overlay: true">
                 <div className="uk-offcanvas-bar">
-                    <h3 className='uk-text-bold'>DELUXE CLOSETS</h3>
+                    <h3 className='uk-text-bold uk-logo'>ZORROCOIN </h3>
                     <ul className="uk-nav-default uk-nav-parent-icon" data-uk-nav>
-                        <li className='uk-button-text uk-width-small' >
-                            <a>route</a>
-                        </li>
                         <li className="uk-nav-divider uk-margin-top"></li>
-                        <li className='uk-button-text uk-width-small'><a href="#"><span className="uk-margin-small-right" data-uk-icon="icon: mail"></span> Mail</a></li>
+                        <li className='uk-button-text uk-width-small'><a href="#"><span className="uk-margin-small-right" data-uk-icon="icon: mail"></span>zorros@zorrocoin.tech</a></li>
                         <li className='uk-button-text uk-width-small'><a href="#"><span className="uk-margin-small-right" data-uk-icon="icon: github"></span> Github</a></li>
                         <li className='uk-button-text uk-width-small'><a href="#"><span className="uk-margin-small-right" data-uk-icon="icon: facebook"></span> Facebook</a></li>
-                        <li className='uk-button-text uk-width-small'><a href="#"><span className="uk-margin-small-right" data-uk-icon="icon: whatsapp"></span> WhatsApp</a></li>
                     </ul>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 
 const uikit = require('uikit')
 const icons = require('uikit/dist/js/uikit-icons.min')

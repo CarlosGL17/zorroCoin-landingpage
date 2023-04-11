@@ -11,7 +11,9 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 16px;
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimizeSpeed
 }
 
 *,
@@ -20,8 +22,6 @@ html {
   -webkit-box-sizing: inherit;
   box-sizing: inherit;
   scroll-behavior: smooth;
-  //image-rendering: -webkit-optimize-contrast;
-  //image-rendering: optimizeSpeed
 }
 
 body {
@@ -110,6 +110,18 @@ sans-serif;
   }
 }
 
+.uk-nav-default {
+  li {
+    a {
+      color: #ECEDF0;
+
+      &:hover {
+        color: #e4e4e4;
+      }
+    }
+  }
+}
+
 .uk-navbar-toggle {
   color: #ECEDF0;
 
@@ -122,8 +134,8 @@ sans-serif;
   }
 }
 
-.uk-container{
-  &.nav{
+.uk-container {
+  &.nav {
     background-color: $background-color;
   }
 }
@@ -132,12 +144,22 @@ sans-serif;
   border-bottom: 0.2rem solid #38A700;
 }
 
-.uk-heading-large{
+.uk-heading-medium {
   font-weight: bold;
   color: #ECEDF0;
 }
 
-.uk-heading-small{
+.uk-heading-large {
+  font-weight: bold;
+  color: #ECEDF0;
+}
+
+.uk-heading-small {
+  margin-top: -0.5rem;
+  color: #ECEDF0;
+}
+
+.uk-heading-xsmall {
   margin-top: -0.5rem;
   color: #ECEDF0;
 }
@@ -150,13 +172,30 @@ sans-serif;
   &:hover {
     @include shadow-card();
   }
-  &-green{
+
+  &-green {
     color: #ECEDF0;
     background-image: linear-gradient(270deg, #9CF945, #38A700, #157F1F);
     transition: 0.5s;
     background-size: 200% auto;
-    &:hover{
-      background-position: right center; /* change the direction of the change here */
+
+    &:hover {
+      background-position: right center;
+      /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  &-purple {
+    color: #ECEDF0;
+    background-image: linear-gradient(270deg, #541388, #7114BC);
+    transition: 0.5s;
+    background-size: 200% auto;
+
+    &:hover {
+      background-position: right center;
+      /* change the direction of the change here */
       color: #fff;
       text-decoration: none;
     }

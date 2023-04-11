@@ -7,10 +7,12 @@ export default function Home() {
     <div>
       <div className='hero-section'>
         <div className="uk-grid-match uk-flex-middle" data-uk-grid>
-          <div className='uk-width-expand' style={{zIndex: 2}}>
-            <div className="uk-card uk-card-body uk-margin-large-top">
+          <div className='uk-width-expand' style={{ zIndex: 2 }}>
+            <div className="uk-card uk-card-body uk-margin-large-top uk-padding-large">
               <h1 className='uk-heading-large'>Making The World <br />Work Better For All</h1>
               <h2 className='uk-heading-small'>ZorroCoin is a token made <br />by students for students</h2>
+              <button className='uk-button uk-button-green uk-button-large uk-margin-top uk-margin-right'>Contract</button>
+              <button className='uk-button uk-button-purple uk-button-large uk-margin-top'>Ecosystem</button>
             </div>
           </div>
           <div className='uk-width-auto'>
@@ -20,8 +22,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className='uk-section'>
-
+      <div className='uk-section uk-margin-remove-top'>
+        <div className='uk-container uk-container-xlarge'>
+        </div>
       </div>
     </div>
   )
