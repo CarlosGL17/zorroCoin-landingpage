@@ -12,3 +12,13 @@
     justify-content: center;
     text-align: center;
 }
+
+.hero-img{
+    -webkit-filter: drop-shadow(0px 10px 60px rgba(156,249,69, 0.7));
+    filter: drop-shadow(0px 10px 60px rgba(156,249,69, 0.7));
+}
+
+.purple-glow{
+    -webkit-filter: drop-shadow(0px 10px 60px rgba(113, 20, 188, 0.7));
+    filter: drop-shadow(0px 10px 60px rgba(113, 20, 188, 0.7));
+}

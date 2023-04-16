@@ -15,19 +15,19 @@ const Navbar = () => {
                 <div className="uk-container nav uk-container-expand uk-light">
                     <div data-uk-navbar>
                         <div className="uk-navbar-left">
-                            <a className="uk-navbar-item" ><Img src={Logo} alt="" width={50} height={50} quality={100} decoding='async' /></a>
-                            <a className="uk-navbar-item uk-logo" href="#">ZORROCOIN</a>
+                            <a className="uk-navbar-item" ><Img src={Logo} alt="ZorroCoin logo" width={50} height={50} quality={100} decoding='async' /></a>
+                            <a className="uk-navbar-item uk-logo" href="#hero">ZORROCOIN</a>
                         </div>
                         <div className="uk-navbar-right">
                             <ul className="uk-navbar-nav">
                                 <li className='uk-navbar-item'>
-                                    <a className="uk-button-text uk-visible@m" href="#Ecosistema">Ecosystem</a>
-                                </li>
-                                <li className='uk-navbar-item uk-visible@m'>
-                                    <a className="uk-button-text">Whitepaper</a>
+                                    <a className="uk-button-text uk-visible@m" href="#Ecosystem">Ecosystem</a>
                                 </li>
                                 <li className='uk-navbar-item uk-visible@m'>
                                     <a className="uk-button-text">Roadmap</a>
+                                </li>
+                                <li className='uk-navbar-item uk-visible@m'>
+                                    <a className="uk-button-text" href='#Community'>Community</a>
                                 </li>
                                 <li className='uk-navbar-item uk-visible@s'>
                                     <button className='uk-button uk-button-green'>Contract</button>
@@ -40,10 +40,11 @@ const Navbar = () => {
             </nav>
             <div id="offcanvas" data-uk-offcanvas="flip: false; overlay: true">
                 <div className="uk-offcanvas-bar">
-                    <a><Img src={Logo} alt="" width={50} height={50} quality={100} decoding='async' /></a>
-                    <a className='uk-text-bold uk-logo' href='#'>ZORROCOIN </a>
+                    <a><Img src={Logo} alt="ZorroCoin logo" width={50} height={50} quality={100} decoding='async' /></a>
+                    <a className='uk-text-bold uk-logo uk-logo-small' href='#hero'>ZORROCOIN </a>
                     <ul className="uk-nav-default uk-nav-parent-icon" data-uk-nav>
                         <li className="uk-nav-divider uk-margin-top"></li>
+                        <li className='uk-button-text uk-width-small'><a href="#Ecosystem">Ecosystem</a></li>
                         <li><a href="#"><span className="uk-margin-small-right" data-uk-icon="icon: mail"></span> zorros@zorrocoin.tech</a></li>
                         <li className='uk-button-text uk-width-small'><a href="#"><span className="uk-margin-small-right" data-uk-icon="icon: github"></span> Github</a></li>
                         <li className='uk-button-text uk-width-small'><a href="#"><span className="uk-margin-small-right" data-uk-icon="icon: facebook"></span> Facebook</a></li>

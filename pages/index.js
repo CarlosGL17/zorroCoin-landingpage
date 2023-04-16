@@ -2,6 +2,9 @@ import Head from 'next/head'
 import dynamic from 'next/dynamic'
 
 const Hero = dynamic(() => import('../components/Hero'), { ssr: true })
+const Ecosystem = dynamic(() => import('../components/Ecosystem'), { ssr: true })
+const Community = dynamic(() => import('../components/Community'), { ssr: true })
+const Roadmap = dynamic(() => import('../components/Roadmap'), { ssr: true })
 
 export default function Home() {
   return (
@@ -10,16 +13,16 @@ export default function Home() {
         <title>ZorroCoin</title>
         <meta name="description" content="ZorroCoin ERC20 token" />
         <meta name="keywords" content="Zorro Coin, ERC20 token, students, ITESZ" />
-        <meta name="author" content="ZorroCoin Team" />
-        <meta name="copyright" content="ZorroCoin" />
-        <link rel="canonical" href="https://zorrocoin.tech/" />
+        <meta name="author" content="ZorroCoin Ecosysten" />
+        <meta name="copyright" content="ZorroCoin Ecosysten" />
+        <link rel="canonical" href="https://www.zorrocoin.tech/" />
         <link rel="icon" href="/favicon.ico" decoding='async' />
+        <meta name="theme-color" content="#160E33" />
       </Head>
-      <Hero></Hero>
-      <div className='uk-section uk-margin-remove-top'>
-        <div className='uk-container uk-container-xlarge'>
-        </div>
-      </div>
+      <Hero />
+      <Ecosystem />
+      <Roadmap />
+      <Community />
     </div>
   )
 }

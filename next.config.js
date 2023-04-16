@@ -9,7 +9,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   compress: true,
-  ssr: true,
   optimizeFonts: true,
   images: {
     disableStaticImages: true,

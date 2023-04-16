@@ -1,6 +1,7 @@
 $background-color: #160E33;
 
 html {
+  scroll-padding-top: 4.9rem;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   text-rendering: optimizeLegibility;
@@ -91,11 +92,21 @@ sans-serif;
 
 @import "uikit/src/scss/uikit.scss";
 
+.uk-green-gradient {
+  font-weight: bold;
+  font-size: 2rem;
+  @include green-gradient;
+}
+
 .uk-logo {
   font-weight: bold;
   margin-left: 0.5rem;
   font-size: 2rem;
   @include green-gradient;
+}
+
+.uk-logo-small {
+  font-size: 1.7rem;
 }
 
 .uk-navbar-item {
@@ -180,9 +191,9 @@ sans-serif;
     background-size: 200% auto;
 
     &:hover {
+      -webkit-filter: drop-shadow(0px 8px 30px rgba(156, 249, 69, 0.5));
+      filter: drop-shadow(0px 8px 30px rgba(156, 249, 69, 0.5));
       background-position: right center;
-      /* change the direction of the change here */
-      color: #fff;
       text-decoration: none;
     }
   }
@@ -194,10 +205,180 @@ sans-serif;
     background-size: 200% auto;
 
     &:hover {
-      background-position: right center;
-      /* change the direction of the change here */
+      -webkit-filter: drop-shadow(0px 8px 30px rgba(113, 20, 188, 0.7));
+      filter: drop-shadow(0px 8px 30px rgba(113, 20, 188, 0.7));
+
       color: #fff;
       text-decoration: none;
+    }
+  }
+}
+
+.uk-text-white {
+  font-size: 1.2rem;
+  color: #e4e4e4;
+}
+
+.uk-text-white-h3 {
+  color: #e4e4e4;
+}
+
+.uk-card-border {
+  &-white {
+    border: 3px solid #e4e4e4;
+    border-radius: 43px;
+    box-shadow: none;
+    -webkit-border-radius: 43px;
+    -moz-border-radius: 43px;
+    -ms-border-radius: 43px;
+    -o-border-radius: 43px;
+  }
+
+  &-purple {
+    border: 3px solid transparent;
+    background: linear-gradient($background-color, $background-color) padding-box,
+      linear-gradient(to right, #541388, #7114BC) border-box;
+
+    border-radius: 43px;
+    box-shadow: none;
+    -webkit-border-radius: 43px;
+    -moz-border-radius: 43px;
+    -ms-border-radius: 43px;
+    -o-border-radius: 43px;
+    transition: 0.5s;
+
+    &:hover {
+      -webkit-filter: drop-shadow(0px 8px 30px rgba(113, 20, 188, 0.5));
+      filter: drop-shadow(0px 8px 30px rgba(113, 20, 188, 0.5));
+    }
+  }
+
+  &-green {
+    border: 3px solid transparent;
+    background: linear-gradient($background-color, $background-color) padding-box,
+      linear-gradient(to right, #9CF945, #38A700, #157F1F) border-box;
+
+    border-radius: 43px;
+    box-shadow: none;
+    -webkit-border-radius: 43px;
+    -moz-border-radius: 43px;
+    -ms-border-radius: 43px;
+    -o-border-radius: 43px;
+    transition: 0.5s;
+
+    &:hover {
+      -webkit-filter: drop-shadow(0px 8px 30px rgba(156, 249, 69, 0.5));
+      filter: drop-shadow(0px 8px 30px rgba(156, 249, 69, 0.5));
+    }
+  }
+}
+
+.uk-timeline .uk-timeline-item .uk-card {
+  max-height: 400px;
+}
+
+.uk-timeline .uk-timeline-item {
+  display: flex;
+  position: relative;
+}
+
+.uk-timeline .uk-timeline-item::before {
+  background: linear-gradient(20deg, #9CF945, #38A700, #157F1F);
+
+  content: "";
+  height: 100%;
+  left: 19px;
+  position: absolute;
+  top: 20px;
+  width: 2px;
+  z-index: 1;
+
+  -webkit-filter: drop-shadow(0px 8px 30px rgba(156, 249, 69, 0.5));
+  filter: drop-shadow(0px 8px 30px rgba(156, 249, 69, 0.5));
+}
+
+.uk-timeline .uk-timeline-item .uk-timeline-icon {
+  z-index: 2;
+
+}
+
+.uk-timeline .uk-timeline-item .uk-timeline-icon .uk-badge {
+  background: linear-gradient(to right, #541388, #7114BC);
+  -webkit-filter: drop-shadow(0px 8px 30px rgba(113, 20, 188, 0.5));
+  filter: drop-shadow(0px 8px 30px rgba(113, 20, 188, 0.5));
+  margin-top: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.uk-timeline .uk-timeline-item .uk-timeline-content {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 0 0 0 1rem;
+}
+
+hr {
+  &.uk-hr-green {
+    border-top: 3px solid transparent;
+    background: linear-gradient($background-color, $background-color) padding-box,
+      linear-gradient(to right, #9CF945, #38A700, #157F1F) border-box;
+  }
+
+  &.uk-hr-purple {
+    border-top: 3px solid transparent;
+    background: linear-gradient($background-color, $background-color) padding-box,
+      linear-gradient(to right, #541388, #7114BC) border-box;
+  }
+
+  &.uk-hr-white {
+    border-top: 3px solid #e4e4e4;
+  }
+}
+
+.uk-icon-green {
+  font-weight: bold;
+  font-size: 1.5rem;
+  @include green-gradient;
+
+  svg {
+    color: #9CF945;
+  }
+}
+
+.uk-glow {
+  &-facebook {
+    transition: 0.5s;
+
+    &:hover {
+      -webkit-filter: drop-shadow(0px 8px 30px rgba(24, 119, 242, 0.5));
+      filter: drop-shadow(0px 8px 30px rgba(24, 119, 242, 0.5));
+    }
+  }
+
+  &-twitter {
+    transition: 0.5s;
+
+    &:hover {
+      -webkit-filter: drop-shadow(0px 8px 30px rgba(45, 170, 225, 0.5));
+      filter: drop-shadow(0px 8px 30px rgba(45, 170, 225, 0.5));
+    }
+  }
+
+  &-reddit {
+    transition: 0.5s;
+
+    &:hover {
+      -webkit-filter: drop-shadow(0px 8px 30px rgba(255, 69, 0, 0.5));
+      filter: drop-shadow(0px 8px 30px rgba(255, 69, 0, 0.5));
+    }
+  }
+
+  &-telegram {
+    transition: 0.5s;
+
+    &:hover {
+      -webkit-filter: drop-shadow(0px 8px 30px rgba(55, 174, 226, 0.5));
+      filter: drop-shadow(0px 8px 30px rgba(55, 174, 226, 0.5));
     }
   }
 }
