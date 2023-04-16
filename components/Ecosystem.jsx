@@ -20,7 +20,7 @@ const Ecosystem = () => {
                     {t("Ecosystem.description-3")}
                 </p>
                 <div className='uk-text-center'>
-                    <a className='uk-button uk-button-purple uk-button-large'>{t("Ecosystem.whitepaper")}</a>
+                    <a className='uk-button uk-button-purple uk-button-large' href='#Ecosystem'>{t("Ecosystem.whitepaper")}</a>
                 </div>
                 <div className='uk-grid uk-grid-medium uk-grid-match uk-margin-medium-top' data-uk-grid>
                     <div className='uk-width-1-3@s'>

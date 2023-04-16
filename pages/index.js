@@ -18,7 +18,7 @@ export default function Home({ locale }) {
         <meta name="keywords" content="Zorro Coin, ERC20 token, students, ITESZ" />
         <meta name="author" content="ZorroCoin Ecosysten" />
         <meta name="copyright" content="ZorroCoin Ecosysten" />
-        <link rel="canonical" href="https://www.zorrocoin.tech/" />
+        <link rel="canonical" href="https://zorrocoin.tech/" />
         <link rel="icon" href="/favicon.ico" decoding='async' />
         <meta name="theme-color" content="#160E33" />
       </Head>
