@@ -1,0 +1,100 @@
+{
+    "header": {
+        "Ecosystem": "Ecosystem",
+        "Roadmap": "Roadmap",
+        "Community": "Community",
+        "Contract": "Contract"
+    },
+    "hero": {
+        "h2": "LEAVE A MARK ",
+        "h2-2": "IN THE ETERNITY",
+        "h1": "ZorroCoin is a token made ",
+        "h1-2": "by students for students"
+    },
+    "Ecosystem": {
+        "description": "ZorroCoin is the result of a simple question from a decentralized community of the ITESZ (Instituto Tecnológico de Estudios Superiores de Zamora): ",
+        "description-comma": "Could a decentralized student team make a cryptocurrency for students and also that benefits the environment?",
+        "description-3": " ZorroCoin, is an ERC-20 token based on the Polygon network. It aims to prove that it's possible, the ZorroCoin community started developing an entire ecosystem with this thought and philosophy in mind.",
+        "whitepaper": "Read whitepaper",
+        "status": "COMING SOON",
+        "card-1": {
+            "title": "ZorroCoin (ZORRO)",
+            "description": "Campaign to promote recycling at ITESZ and provide liquidity to the token"
+        },
+        "card-2": {
+            "title": "Acceptance",
+            "description": "Implement as a payment method in different ITESZ nodes"
+        },
+        "card-3": {
+            "title": "RedZorro (blockchain)",
+            "description": "Create projects, sign documents, issue NFTs using the proprietary blockchain developed by the ZorroCoin community"
+        },
+        "event-1": {
+            "title": "RECYCLE CAMPAIGN",
+            "description": "Private event. Campaign with the objective of promoting the recycling culture within ITESZ and obtaining liquidity."
+        },
+        "event-2": {
+            "title": "INITIAL COIN OFFERING (ICO)",
+            "description": "Public event. First initial coin offering for all investors interested in the ecosystem."
+        }
+    },
+    "Roadmap": [
+        {
+            "date": "Q2 2023",
+            "description": "Recycle campaign (Liquidity)",
+            "color": "uk-card-border-green",
+            "colorHr": "uk-hr-green"
+        },
+        {
+            "date": "Q3 2023",
+            "description": "Initial Coin Offering (ICO)",
+            "color": "uk-card-border-purple",
+            "colorHr": "uk-hr-purple"
+        },
+        {
+            "date": "Q3 2023",
+            "description": "Integrate as a payment method at ITESZ",
+            "color": "uk-card-border-white",
+            "colorHr": "uk-hr-white"
+        },
+        {
+            "date": "Q4 2023",
+            "description": "Replication in other ITESZ nodes",
+            "color": "uk-card-border-white",
+            "colorHr": "uk-hr-white"
+        },
+        {
+            "date": "2025",
+            "description": "Help fund the ISC's 25th Anniversary",
+            "color": "uk-card-border-white",
+            "colorHr": "uk-hr-white"
+        },
+        {
+            "date": "2025",
+            "description": "RedZorro (ITESZ blockchain)",
+            "color": "uk-card-border-white",
+            "colorHr": "uk-hr-white",
+            "message": "Do you have an idea or project to contribute? Contact ZorroCoin team"
+        }
+    ],
+    "Community": {
+        "header-1": "ZorroCoin team",
+        "members": [{
+                "name": "Carlos Humberto Garcia Lira",
+                "position": "Founder",
+                "rol": "CTO & business plan"
+            },
+            {
+                "name": "Miguel Carriedo Oseguera",
+                "position": "Cofundador",
+                "rol": "Business plan"
+            },
+            {
+                "name": "Leonardo Barriga Garibay",
+                "position": "Cofundador",
+                "rol": "Business plan"
+            }
+        ],
+        "header-2": "Social media"
+    }
+}

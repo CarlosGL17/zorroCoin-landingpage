@@ -1,0 +1,100 @@
+{
+    "header": {
+        "Ecosystem": "Ecosistema",
+        "Roadmap": "Cronograma",
+        "Community": "Comunidad",
+        "Contract": "Contrato"
+    },
+    "hero": {
+        "h2": "DEJA UNA HUELLA ",
+        "h2-2": "PARA LA ETERNIDAD",
+        "h1": "ZorroCoin es un token hecho ",
+        "h1-2": "por estudiantes para estudiantes"
+    },
+    "Ecosystem": {
+        "description": "ZorroCoin nació por una simple pregunta que se planteó una comunidad descentralizada del ITESZ (Instituto Tecnológico de Estudios Superiores de Zamora): ",
+        "description-comma": "¿Podría un equipo descentralizado de estudiantes hacer una criptomoneda para estudiantes y además beneficiar al medioambiente?",
+        "description-3": " ZorroCoin, es un Token ERC-20 basado en la red Polygon, que tiene como objetivo demostrar que es posible. Con este pensamiento y filosofía en mente, la comunidad de ZorroCoin comenzó el desarrollo de todo un ecosistema.",
+        "whitepaper": "Leer el papel blanco",
+        "status": "PRÓXIMAMENTE",
+        "card-1": {
+            "title": "ZorroCoin (ZORRO)",
+            "description": "Campaña para fomentar el reciclaje en el ITESZ y dar liquidez al token"
+        },
+        "card-2": {
+            "title": "Adopción",
+            "description": "Implementar como método de pago en diferentes nodos del ITESZ"
+        },
+        "card-3": {
+            "title": "RedZorro (blockchain)",
+            "description": "Crear projectos, firmar documentos, emitir NFTs empleando la blockchain propia desarrollada por la comunidad de ZorroCoin"
+        },
+        "event-1": {
+            "title": "CAMPAÑA DE RECICLAJE",
+            "description": "Evento privado. Campaña con el objetivo de fomentar la cultura del reciclaje dentro del ITESZ y obtener liquidez."
+        },
+        "event-2": {
+            "title": "OFERTA INICIAL DE MONEDAS (ICO)",
+            "description": "Evento publico. Primera oferta inicial de monedas para todo inversionista interesado en el ecosistema."
+        }
+    },
+    "Roadmap": [
+        {
+            "date": "Q2 2023",
+            "description": "Campaña de reciclaje (Liquidez)",
+            "color": "uk-card-border-green",
+            "colorHr": "uk-hr-green"
+        },
+        {
+            "date": "Q3 2023",
+            "description": "Oferta Inicial de Monedas (ICO)",
+            "color": "uk-card-border-purple",
+            "colorHr": "uk-hr-purple"
+        },
+        {
+            "date": "Q3 2023",
+            "description": "Integrar como método de pago dentro del ITESZ",
+            "color": "uk-card-border-white",
+            "colorHr": "uk-hr-white"
+        },
+        {
+            "date": "Q4 2023",
+            "description": "Adopción en otros nodos del ITESZ",
+            "color": "uk-card-border-white",
+            "colorHr": "uk-hr-white"
+        },
+        {
+            "date": "2025",
+            "description": "Contribuir al financiamiento del 25 aniversario de ISC",
+            "color": "uk-card-border-white",
+            "colorHr": "uk-hr-white"
+        },
+        {
+            "date": "2025",
+            "description": "RedZorro (ITESZ Blockchain)",
+            "color": "uk-card-border-white",
+            "colorHr": "uk-hr-white",
+            "message": "¿Tienes una idea o proyecto para aportar? Contacta al equipo de ZorroCoin"
+        }
+    ],
+    "Community": {
+        "header-1": "Equipo de ZorroCoin",
+        "members": [{
+                "name": "Carlos Humberto Garcia Lira",
+                "position": "Fundador",
+                "rol": "CTO y plan de negocios"
+            },
+            {
+                "name": "Miguel Carriedo Oseguera",
+                "position": "Cofundador",
+                "rol": "Plan de negocios"
+            },
+            {
+                "name": "Leonardo Barriga Garibay",
+                "position": "Cofundador",
+                "rol": "Plan de negocios"
+            }
+        ],
+        "header-2": "Redes sociales"
+    }
+}

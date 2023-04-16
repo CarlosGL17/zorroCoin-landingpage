@@ -1,12 +1,15 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
 const Hero = dynamic(() => import('../components/Hero'), { ssr: true })
 const Ecosystem = dynamic(() => import('../components/Ecosystem'), { ssr: true })
 const Community = dynamic(() => import('../components/Community'), { ssr: true })
 const Roadmap = dynamic(() => import('../components/Roadmap'), { ssr: true })
 
-export default function Home() {
+export default function Home({ locale }) {
   return (
     <div>
       <Head>
@@ -25,4 +28,12 @@ export default function Home() {
       <Community />
     </div>
   )
+}
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["common"])),
+    },
+  };
 }

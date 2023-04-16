@@ -1,5 +1,7 @@
 import '../styles/uikit.scss'
 
+import { appWithTranslation } from 'next-i18next';
+
 import dynamic from 'next/dynamic'
 const UIKit = dynamic(() => import('../components/Uikit'), { ssr: true })
 
@@ -18,4 +20,4 @@ function MyApp({ Component, pageProps }) {
   )
 }
 
-export default MyApp
+export default appWithTranslation(MyApp)
