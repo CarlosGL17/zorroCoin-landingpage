@@ -5,7 +5,7 @@ const Hero = () => {
     const { t } = useTranslation();
 
     return (
-        <div className='hero-section' id='hero'>
+        <div className='hero-section' id='Hero'>
             <div className="uk-grid-match uk-flex-top" data-uk-grid>
                 <div className='uk-width-expand' style={{ zIndex: 2 }}>
                     <div className="uk-card uk-card-body uk-padding-large">

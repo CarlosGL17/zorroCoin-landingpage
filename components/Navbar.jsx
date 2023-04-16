@@ -27,8 +27,8 @@ const Navbar = () => {
                 <div className="uk-container nav uk-container-expand uk-light">
                     <div data-uk-navbar>
                         <div className="uk-navbar-left">
-                            <a className="uk-navbar-item" ><Img src={Logo} alt="ZorroCoin logo" width={50} height={50} quality={100} decoding='async' /></a>
-                            <a className="uk-navbar-item uk-logo" href="#hero">ZORROCOIN</a>
+                            <a className="uk-navbar-item" href="#Hero"><Img src={Logo} alt="ZorroCoin logo" width={50} height={50} quality={100} decoding='async' /></a>
+                            <a className="uk-navbar-item uk-logo" href="#Hero">ZORROCOIN</a>
                         </div>
                         <div className="uk-navbar-right">
                             <ul className="uk-navbar-nav">
@@ -50,7 +50,12 @@ const Navbar = () => {
                                 return (
                                     <span key={"locale-" + locale}>
                                         <Link href={{ pathname, query }} as={asPath} locale={locale}>
-                                            <a className='uk-button uk-button-small uk-button-purple'>
+                                            <a className='uk-button uk-button-purple uk-visible@s'>
+                                                {locale === "en" ? "EN" : locale === "es" ? "ES" : null}
+                                            </a>
+                                        </Link>
+                                        <Link href={{ pathname, query }} as={asPath} locale={locale}>
+                                            <a className='uk-button uk-button-small uk-button-purple uk-hidden@s'>
                                                 {locale === "en" ? "EN" : locale === "es" ? "ES" : null}
                                             </a>
                                         </Link>
@@ -64,13 +69,13 @@ const Navbar = () => {
             </nav>
             <div id="offcanvas" data-uk-offcanvas="flip: false; overlay: true">
                 <div className="uk-offcanvas-bar">
-                    <a><Img src={Logo} alt="ZorroCoin logo" width={50} height={50} quality={100} decoding='async' /></a>
-                    <a className='uk-text-bold uk-logo uk-logo-small' href='#hero'>ZORROCOIN </a>
+                    <a href="#Hero"><Img src={Logo} alt="ZorroCoin logo" width={50} height={50} quality={100} decoding='async' /></a>
+                    <a className='uk-text-bold uk-logo uk-logo-small' href='#Hero'>ZORROCOIN </a>
                     <ul className="uk-nav-default uk-nav-parent-icon" data-uk-nav>
                         <li className="uk-nav-divider uk-margin-top"></li>
                         <li className='uk-button-text uk-width-small'><a href="#Ecosystem">{t("header.Ecosystem")}</a></li>
-                        <li className='uk-button-text uk-width-small'><a href="#Ecosystem">{t("header.Roadmap")}</a></li>
-                        <li className='uk-button-text uk-width-small'><a href="#Ecosystem">{t("header.Community")}</a></li>
+                        <li className='uk-button-text uk-width-small'><a href="#Roadmap">{t("header.Roadmap")}</a></li>
+                        <li className='uk-button-text uk-width-small'><a href="#Community">{t("header.Community")}</a></li>
                         <li><a href="mailto:zorros@zorrocoin.tech"><span className="uk-margin-small-right" data-uk-icon="icon: mail"></span> zorros@zorrocoin.tech</a></li>
                         <li className='uk-button-text uk-width-small'><a href='https://www.facebook.com/profile.php?id=100087399623431'><span className="uk-margin-small-right" data-uk-icon="icon: facebook"></span> Facebook</a></li>
                     </ul>
