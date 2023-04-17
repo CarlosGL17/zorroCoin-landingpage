@@ -78,7 +78,10 @@ const Navbar = () => {
                         <li className='uk-button-text uk-width-small'><a href="#Roadmap">{t("header.Roadmap")}</a></li>
                         <li className='uk-button-text uk-width-small uk-margin-small-bottom'><a href="#Community">{t("header.Community")}</a></li>
                         <li><a href="mailto:zorros@zorrocoin.tech"><span className="uk-margin-small-right" data-uk-icon="icon: mail"></span> zorros@zorrocoin.tech</a></li>
-                        <li className='uk-button-text uk-width-small'><a href='https://www.facebook.com/profile.php?id=100087399623431'><span className="uk-margin-small-right" data-uk-icon="icon: facebook"></span> Facebook</a></li>
+                        <li className='uk-button-text uk-width-small'><a href='https://www.facebook.com/profile.php?id=100087399623431' target="_blank" rel="noopener noreferrer"><span className="uk-margin-small-right" data-uk-icon="icon: facebook"></span> Facebook</a></li>
+                        <li className='uk-button-text uk-width-small'><a href='https://twitter.com/EcoZorrocoin' target="_blank" rel="noopener noreferrer"><span className="uk-margin-small-right" data-uk-icon="icon: twitter"></span> Twitter</a></li>
+                        <li className='uk-button-text uk-width-small'><a href='https://www.reddit.com/r/zorrocoin/' target="_blank" rel="noopener noreferrer"><span className="uk-margin-small-right" data-uk-icon="icon: reddit"></span> Reddit</a></li>
+                        <li className='uk-button-text uk-width-small'><a href='https://t.me/zorrocoineco' target="_blank" rel="noopener noreferrer"> Telegram</a></li>
                         <li className='uk-margin-top'><button className='uk-button uk-width-large uk-button-green uk-margin-small-right' data-uk-toggle='target: #contract'>{t("header.Contract")}</button></li>
                     </ul>
                 </div>
