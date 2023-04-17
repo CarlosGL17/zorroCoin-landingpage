@@ -18,7 +18,7 @@ const Community = () => {
                     {
                         t("Community.members", { returnObjects: true }).map((member, index) => {
                             return (
-                                <div className='uk-width-1-5@s' key={index}>
+                                <div className='uk-width-1-4@l  uk-width-1-2@s' key={index}>
                                     <div className='uk-card uk-card-border-purple uk-padding-small uk-text-center'>
                                         <h3 className='uk-text-bolder uk-text-white-h3 uk-margin-remove-bottom'>{member.name}</h3>
                                         <p className='uk-icon-green uk-margin-remove-top uk-margin-small-bottom'>{member.position}</p>

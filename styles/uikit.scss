@@ -383,4 +383,29 @@ hr {
   }
 }
 
+.uk-modal{
+  background: rgba(0, 0, 0, 0.3);
+}
+.uk-modal-close-default{
+  svg{
+    color: #ECEDF0;
+  }
+}
+.uk-modal-dialog{
+  border: 5px solid transparent;
+  background: linear-gradient($background-color, $background-color) padding-box,
+    linear-gradient(to right, #541388, #7114BC) border-box;
+
+  border-radius: 43px;
+  box-shadow: none;
+  -webkit-border-radius: 43px;
+  -moz-border-radius: 43px;
+  -ms-border-radius: 43px;
+  -o-border-radius: 43px;
+  transition: 0.5s;
+
+  -webkit-filter: drop-shadow(0px 8px 30px rgba(113, 20, 188, 0.5));
+  filter: drop-shadow(0px 8px 30px rgba(113, 20, 188, 0.5));
+}
+
 @import "main.scss";

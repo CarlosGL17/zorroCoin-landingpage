@@ -1,9 +1,9 @@
 import Img from "next/future/image";
 import { useTranslation } from 'next-i18next';
 import logoHero from '../assets/img/zorro.png'
+
 const Hero = () => {
     const { t } = useTranslation();
-
     return (
         <div className='hero-section' id='Hero'>
             <div className="uk-grid-match uk-flex-top" data-uk-grid>
@@ -11,7 +11,7 @@ const Hero = () => {
                     <div className="uk-card uk-card-body uk-padding-large">
                         <h2 className='uk-heading-large'>{t("hero.h2")}<br />{t("hero.h2-2")}</h2>
                         <h1 className='uk-heading-small'>{t("hero.h1")}<br />{t("hero.h1-2")}</h1>
-                        <button className='uk-button uk-button-green uk-button-large uk-margin-top uk-margin-right'>{t("header.Contract")}</button>
+                        <button className='uk-button uk-button-green uk-button-large uk-margin-top uk-margin-right' data-uk-toggle="target: #contract">{t("header.Contract")}</button>
                         <a href='#Ecosystem' className='uk-button uk-button-purple uk-button-large uk-margin-top'>{t("header.Ecosystem")}</a>
                     </div>
                 </div>

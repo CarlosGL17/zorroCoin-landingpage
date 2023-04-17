@@ -1,5 +1,6 @@
 import Img from "next/future/image";
 import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
 
 import logo from '../assets/img/zorroCoinLogo12.png'
 import frame from '../assets/img/Frame.webp'
@@ -11,6 +12,13 @@ import frame4 from '../assets/img/Frame4.webp'
 const Ecosystem = () => {
     const { t } = useTranslation();
 
+    const router = useRouter();
+    const { locales, locale: activeLocale } = router;
+
+    const otherLocales = locales?.filter(
+        (locale) => locale !== activeLocale && locale !== "default"
+    );
+
     return (
         <div className='uk-section uk-margin-remove-top' id='Ecosystem'>
             <div className='uk-container uk-container-xlarge uk-padding-large uk-padding-remove-vertical'>
@@ -20,7 +28,16 @@ const Ecosystem = () => {
                     {t("Ecosystem.description-3")}
                 </p>
                 <div className='uk-text-center'>
-                    <a className='uk-button uk-button-purple uk-button-large' href='#Ecosystem'>{t("Ecosystem.whitepaper")}</a>
+                    {otherLocales?.map((locale) => {
+                        return (
+                            <a
+                                key={"locale-" + locale}
+                                className='uk-button uk-button-purple uk-button-large'
+                                href={locale === "en" ? "es/zorrocoin-whitepaper-v1.pdf" : locale === "es" ? "/zorrocoin-whitepaper-v1.pdf" : null}>
+                                {t("Ecosystem.whitepaper")}
+                            </a>
+                        );
+                    })}
                 </div>
                 <div className='uk-grid uk-grid-medium uk-grid-match uk-margin-medium-top' data-uk-grid>
                     <div className='uk-width-1-3@s'>

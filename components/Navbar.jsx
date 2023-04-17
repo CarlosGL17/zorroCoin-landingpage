@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import { useTranslation } from "next-i18next";
 
 import Logo from '../assets/img/zorroCoinLogo12.png';
+const token = '0x6275CF37d1C95f443473C1807Cf686887F2bfBBC'
 
 const Navbar = () => {
     const { t } = useTranslation();
@@ -42,7 +43,7 @@ const Navbar = () => {
                                     <a className="uk-button-text" href='#Community'>{t("header.Community")}</a>
                                 </li>
                                 <li className='uk-navbar-item uk-visible@s'>
-                                    <button className='uk-button uk-button-green uk-margin-small-right'>{t("header.Contract")}</button>
+                                    <button className='uk-button uk-button-green uk-margin-small-right' data-uk-toggle='target: #contract'>{t("header.Contract")}</button>
                                 </li>
                             </ul>
                             {otherLocales?.map((locale) => {
@@ -75,10 +76,27 @@ const Navbar = () => {
                         <li className="uk-nav-divider uk-margin-top"></li>
                         <li className='uk-button-text uk-width-small'><a href="#Ecosystem">{t("header.Ecosystem")}</a></li>
                         <li className='uk-button-text uk-width-small'><a href="#Roadmap">{t("header.Roadmap")}</a></li>
-                        <li className='uk-button-text uk-width-small'><a href="#Community">{t("header.Community")}</a></li>
+                        <li className='uk-button-text uk-width-small uk-margin-small-bottom'><a href="#Community">{t("header.Community")}</a></li>
                         <li><a href="mailto:zorros@zorrocoin.tech"><span className="uk-margin-small-right" data-uk-icon="icon: mail"></span> zorros@zorrocoin.tech</a></li>
                         <li className='uk-button-text uk-width-small'><a href='https://www.facebook.com/profile.php?id=100087399623431'><span className="uk-margin-small-right" data-uk-icon="icon: facebook"></span> Facebook</a></li>
+                        <li className='uk-margin-top'><button className='uk-button uk-width-large uk-button-green uk-margin-small-right' data-uk-toggle='target: #contract'>{t("header.Contract")}</button></li>
                     </ul>
+                </div>
+            </div>
+            <div id="contract" data-uk-modal='container: .hero-section'>
+                <div className="uk-modal-dialog uk-modal-body">
+                    <button className="uk-modal-close-default" type="button" data-uk-close></button>
+                    <h2 className="uk-modal-title uk-green-gradient">ZORROCOIN ERC-20 TOKEN</h2>
+                    <h3 className='uk-text-bolder uk-text-break uk-text-white-h3 uk-margin-remove-top'>{token}</h3>
+                    <p className="uk-text-right">
+                        <button
+                            className="uk-button uk-button-green uk-modal-close uk-margin-small-right uk-margin-small-bottom"
+                            onClick={() => navigator.clipboard.writeText(token)}
+                        >
+                            Copy to clipboard
+                        </button>
+                        <a className="uk-button uk-button-purple uk-margin-small-bottom" href='https://polygonscan.com/token/0x6275cf37d1c95f443473c1807cf686887f2bfbbc' >View in Polygon Scan</a>
+                    </p>
                 </div>
             </div>
         </div>

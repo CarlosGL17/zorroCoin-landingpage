@@ -38,8 +38,7 @@
             "description": "Evento publico. Primera oferta inicial de monedas para todo inversionista interesado en el ecosistema."
         }
     },
-    "Roadmap": [
-        {
+    "Roadmap": [{
             "date": "Q2 2023",
             "description": "Campaña de reciclaje (Liquidez)",
             "color": "uk-card-border-green",
@@ -93,6 +92,15 @@
                 "name": "Leonardo Barriga Garibay",
                 "position": "Cofundador",
                 "rol": "Plan de negocios"
+            },
+            {
+                "name": "Hugo Enrique Guzman Guitierrez",
+                "position": "Colaborador",
+                "rol": "Campaña de reciclaje"
+            }, {
+                "name": "Bryan Vargas Becerra",
+                "position": "Colaborador",
+                "rol": "Campaña de reciclaje"
             }
         ],
         "header-2": "Redes sociales"

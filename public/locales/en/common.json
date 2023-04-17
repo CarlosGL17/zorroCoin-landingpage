@@ -38,8 +38,7 @@
             "description": "Public event. First initial coin offering for all investors interested in the ecosystem."
         }
     },
-    "Roadmap": [
-        {
+    "Roadmap": [{
             "date": "Q2 2023",
             "description": "Recycle campaign (Liquidity)",
             "color": "uk-card-border-green",
@@ -93,6 +92,16 @@
                 "name": "Leonardo Barriga Garibay",
                 "position": "Cofounder",
                 "rol": "Business plan"
+            },
+            {
+                "name": "Hugo Enrique Guzman Guitierrez",
+                "position": "Collaborator",
+                "rol": "Recycle campaign"
+            },
+            {
+                "name": "Bryan Vargas Becerra",
+                "position": "Collaborator",
+                "rol": "Recycle campaign"
             }
         ],
         "header-2": "Social media"
