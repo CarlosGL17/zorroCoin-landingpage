@@ -14,7 +14,9 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   image-rendering: -webkit-optimize-contrast;
-  image-rendering: optimizeSpeed
+  image-rendering: optimizeSpeed;
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
 }
 
 *,

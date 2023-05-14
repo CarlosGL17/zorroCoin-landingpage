@@ -25,8 +25,7 @@ export default function Home({ }) {
       </Head>
       <Hero />
       <Ecosystem />
-      <Roadmap />
-      <Community />
+
     </div>
   )
 }
