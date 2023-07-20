@@ -17,12 +17,12 @@ const Hero = () => {
                 </div>
                 <div className='uk-hidden@m uk-width-1-3@m uk-margin-top' style={{ position: 'absolute', opacity: 0.5, marginLeft: '1.8rem' }}>
                     <div className="uk-card uk-card-body uk-padding-remove-right uk-text-right">
-                        <Img className='hero-img' src={logoHero} alt="ZorroCoin hero" width={400} height={400} quality={100} decoding='async'></Img>
+                        <Img className='hero-img' src={logoHero} alt="ZorroCoin hero" width={400} height={400} quality={90} priority decoding='async'></Img>
                     </div>
                 </div>
                 <div className='uk-width-1-3@m uk-visible@m'>
                     <div className="uk-card uk-card-body uk-padding-remove-right uk-text-right">
-                        <Img className='hero-img' src={logoHero} alt="ZorroCoin hero" width={400} height={400} quality={100} decoding='async'></Img>
+                        <Img className='hero-img' src={logoHero} alt="ZorroCoin hero" width={400} height={400} quality={90} priority decoding='async'></Img>
                     </div>
                 </div>
             </div>

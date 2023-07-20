@@ -1,9 +1,4 @@
-const withImages = require('next-images');
-const { i18n } = require('./next-i18next.config');
-
-const withBundleAnalyzer = require('@next/bundle-analyzer')({
-  enabled: process.env.ANALYZE === 'true',
-})
+const { i18n } = require('./next-i18next.config')
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -12,9 +7,13 @@ const nextConfig = {
   swcMinify: true,
   compress: true,
   optimizeFonts: true,
-  images: {
-    disableStaticImages: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === "production"
   },
+  webpack(config) {
+    config.experiments = { ...config.experiments, topLevelAwait: true }
+    return config
+  }
 }
 
-module.exports = withImages(withBundleAnalyzer(nextConfig))
+module.exports = nextConfig

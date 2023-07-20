@@ -14,7 +14,7 @@ const Navbar = () => {
 
     const otherLocales = locales?.filter(
         (locale) => locale !== activeLocale && locale !== "default"
-    );
+    )
 
     return (
         <div data-uk-sticky="sel-target: .uk-container; cls-active: uk-navbar-sticky uk-dark; cls-inactive: uk-light; top: #end;">
@@ -28,7 +28,7 @@ const Navbar = () => {
                 <div className="uk-container nav uk-container-expand uk-light">
                     <div data-uk-navbar>
                         <div className="uk-navbar-left">
-                            <a className="uk-navbar-item" href="#Hero"><Img src={Logo} alt="ZorroCoin logo" width={50} height={50} quality={100} decoding='async' /></a>
+                            <a className="uk-navbar-item" href="#Hero"><Img src={Logo} alt="ZorroCoin logo" width={50} height={50} quality={90} decoding='async' /></a>
                             <a className="uk-navbar-item uk-logo" href="#Hero">ZORROCOIN</a>
                         </div>
                         <div className="uk-navbar-right">
@@ -70,7 +70,7 @@ const Navbar = () => {
             </nav>
             <div id="offcanvas" data-uk-offcanvas="flip: false; overlay: true">
                 <div className="uk-offcanvas-bar">
-                    <a href="#Hero"><Img src={Logo} alt="ZorroCoin logo" width={50} height={50} quality={100} decoding='async' /></a>
+                    <a href="#Hero"><Img src={Logo} alt="ZorroCoin logo" width={50} height={50} quality={90} decoding='async' /></a>
                     <a className='uk-text-bold uk-logo uk-logo-small' href='#Hero'>ZORROCOIN </a>
                     <ul className="uk-nav-default uk-nav-parent-icon" data-uk-nav>
                         <li className="uk-nav-divider uk-margin-top"></li>

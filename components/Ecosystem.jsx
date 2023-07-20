@@ -17,7 +17,7 @@ const Ecosystem = () => {
 
     const otherLocales = locales?.filter(
         (locale) => locale !== activeLocale && locale !== "default"
-    );
+    )
 
     return (
         <div className='uk-section uk-margin-remove-top' id='Ecosystem'>
@@ -83,4 +83,4 @@ const Ecosystem = () => {
     )
 }
 
-export default Ecosystem;
+export default Ecosystem

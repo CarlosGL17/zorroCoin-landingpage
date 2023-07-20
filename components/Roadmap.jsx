@@ -1,8 +1,8 @@
 import { useTranslation } from 'next-i18next';
 
 const Roadmap = () => {
-    const { t } = useTranslation();
-
+    const { t } = useTranslation()
+    
     return (
         <div className='uk-section uk-margin-remove-top' id='Roadmap'>
             <div className='uk-container uk-container-xlarge uk-padding-large uk-padding-remove-vertical'>

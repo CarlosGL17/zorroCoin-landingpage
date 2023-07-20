@@ -1,22 +1,16 @@
-import { Component } from 'react'
+import { useCallback, useEffect } from 'react';
+const UIkit = ({ children }) => {
+  const importUIkit = useCallback(async () => {
+    const UIkit = (await import('uikit/dist/js/uikit.min')).default
+    const Icons = (await import('uikit/dist/js/uikit-icons.min')).default
+    UIkit.use(Icons)
+  }, [])
 
-const uikit = require('uikit')
-const icons = require('uikit/dist/js/uikit-icons.min')
+  useEffect(() => {
+    importUIkit()
+  }, [importUIkit])
 
-export default class UIKit extends Component {
-  constructor (props) {
-    super(props)
-    this.state = { ready: false }
-  }
-
-  componentDidMount () {
-    if (typeof window !== 'undefined') {
-      uikit.use(icons)
-      this.setState({ ready: true })
-    }
-  }
-
-  render () {
-    return <div>{this.props.children}</div>
-  }
+  return children
 }
+
+export default UIkit

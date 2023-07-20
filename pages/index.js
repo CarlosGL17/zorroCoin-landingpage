@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import dynamic from 'next/dynamic'
 
-//import { useTranslation } from "next-i18next";
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
 const Hero = dynamic(() => import('../components/Hero'), { ssr: true })
@@ -25,7 +24,8 @@ export default function Home({ }) {
       </Head>
       <Hero />
       <Ecosystem />
-
+      <Roadmap />
+      <Community />
     </div>
   )
 }
